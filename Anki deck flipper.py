@@ -1,6 +1,6 @@
 import sqlite3
 
-deck = sqlite3.connect("G:/Users/Jozhus/Desktop/Files/Downloads/collection.anki2")
+deck = sqlite3.connect("collection.anki2")
 fetched = deck.execute('select id, flds, sfld from notes;')
 cards = fetched.fetchall()
 c = deck.cursor()
